@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de Jugadores</title>
+
+    <style>
+        body {
+            background-color: #3188C9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Jugadores de Fútbol Peruano</h1>
+    <form id="registrationForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required><br><br>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria">
+            <option value="sub17">Sub 17</option>
+            <option value="sub20">Sub 20</option>
+            <option value="mayores">Mayores</option>
+        </select><br><br>
+
+        <label for="genero">Género:</label>
+        <input type="radio" id="generoM" name="genero" value="  masculino" required>Masculino
+        <input type="radio" id="generoF" name="genero" value="  femenino" required>Femenino
+        <label></label>
+        
+        <label for="club">Club:</label>
+        <input type="checkbox" id="clubU" value="Universitario">Universitario
+        <input type="checkbox" id="clubAlianza" value="Alianza Lima">Alianza Lima
+        <input type="checkbox" id="clubCristal" value="Cristal">Cristal
+        <input type="checkbox" id="clubCienciano" value="Cienciano">Cienciano<br><br>
+
+        <input style="font-size: 18px;" type="button" value="Calcular" onclick="calcularTotal()">
+    </form>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

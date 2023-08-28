@@ -1,0 +1,36 @@
+body {
+    font-family: 'Calibri';
+    margin: 20px;
+}
+
+form {
+    border: 1px solid #cccccc;
+    padding: 20px;
+    width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 7px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
